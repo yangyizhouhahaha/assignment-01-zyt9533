@@ -1,4 +1,4 @@
-# WEB服务器
+#  WEB服务器
 
 ## 实验目的
 
@@ -217,17 +217,6 @@ yum install nginx -y
       192.168.56.101 verynginx.sec.cuc.edu.cn
   ```
 
-- 以下访问是在后续配置步骤之后完成的
-
-- 访问verynginx`http://verynginx.sec.cuc.edu.cn:8080/verynginx/index.html`
-
-  ![image-20200529011343705](WEB服务器.assets/image-20200529011343705.png)
-
-  
-
-- 访问`dvwa``dvwa.sec.cuc.edu.cn:5566`
-
-  ![img](WEB服务器.assets/dd.png)
 
 ### 安装 wordpress
 
