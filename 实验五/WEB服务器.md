@@ -26,15 +26,15 @@
 
   - 修改 `Matcher`
 
-    ![image-20200529001900525](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20200529001900525.png)
+    ![image-20200529001900525](WEB服务器.assets/image-20200529001900525.png)
 
   - 修改 `Response`
 
-    ![image-20200529002420742](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20200529002420742.png)
+    ![image-20200529002420742](WEB服务器.assets/image-20200529002420742.png)
 
   - 修改 `Filter`
 
-    ![image-20200529002316395](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20200529002316395.png)
+    ![image-20200529002316395](WEB服务器.assets/image-20200529002316395.png)
 
   - 结果
 
@@ -166,7 +166,7 @@
 yum install nginx -y
 ```
 
-- 更改配置文件，`/etc/nginx/conf.d/default.conf`将监听端口改为`8888`
+- 更改配置文件，将监听端口改为`8888`
 
   ![image-20200528220416194](WEB服务器.assets/image-20200528220416194.png)
 
@@ -189,11 +189,11 @@ yum install nginx -y
   # 安装依赖
   $ yum -y install make git gcc pcre-devel pcre openssl openssl-devel
   
-  # 重新再尝试安装
+  # 安装
   $ sudo python2 install.py install
   ```
 
-- 编辑 VeryNginx 配置文件，修改 `/opt/verynginx/openresty/nginx/conf/nginx.conf`，设置 `server` 监听端口为 `8080`
+- 编辑 VeryNginx 配置文件，设置 监听端口为 `8080`
 
   ![image-20200528221032181](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20200528221032181.png)
 
@@ -203,7 +203,7 @@ yum install nginx -y
   $ sudo /opt/verynginx/openresty/nginx/sbin/nginx
   ```
 
-- 访问 `192.168.56.101:8080/verynginx/index.html` 到 VeryNginx 的界面，用户/密码为 `verynginx/verynginx`
+- 访问 `192.168.141.129:8080/verynginx/index.html` 到 VeryNginx 的界面，用户/密码为 `verynginx/verynginx`
 
   ![image-20200528221058405](WEB服务器.assets/image-20200528221058405.png)
 
@@ -234,7 +234,7 @@ yum install nginx -y
   $ sudo systemctl restart php7.2-fpm
   ```
 
-- 数据库支持
+- 新建数据库
 
   ```
   # mysql新建数据库
@@ -304,7 +304,7 @@ yum install nginx -y
   ​    ![image-20200528222113346](WEB服务器.assets/image-20200528222113346.png)
 
   ```
-  # 语法检查
+  # 检查配置文件
   $ sudo nginx -t
   
   # 重启nginx
@@ -321,7 +321,7 @@ yum install nginx -y
   $ sudo cp /tmp/DVWA /var/www/html
   ```
 
-- dvwa需要数据库支持，所以先新建数据库
+- 新建数据库
 
   ```
   $ sudo mysql -u root -p
