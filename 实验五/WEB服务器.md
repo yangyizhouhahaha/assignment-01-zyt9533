@@ -195,7 +195,7 @@ yum install nginx -y
 
 - 编辑 VeryNginx 配置文件，设置 监听端口为 `8080`
 
-  ![image-20200528221032181](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20200528221032181.png)
+  ![image-20200528221032181](WEB服务器.assets/image-20200528221032181.png)
 
 - 开启VeryNginx
 
